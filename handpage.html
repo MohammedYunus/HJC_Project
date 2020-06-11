@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+  <title>Handpage - log in or sign up</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    header{background-color:#FC4967;
+            position:relative; padding:1.25em 16em 1em 4em;
+            margin:-1em -8em 5em -1.5em;
+           border-bottom: 0.25px solid #D90065 }
+
+    header h1{font-size:40px;
+              font-family:verdana;
+              color:#454543;
+              text-decoration: none;
+              cursor: pointer;}
+
+    header h1:link{color:inherit;}
+
+    .emph{display:block;
+          padding: 0em 0em 0.25em 1em;
+          position:relative;font-family:arial; font-size:14px;}
+
+     #emph{margin: 2px 1em 1.05em 1em; border:0.25px solid black; padding: 0.25em 0 0.25em 0.4em;}
+
+    .pass{ display:block;
+          padding: 0em 0em 0.25em 1em;
+          position: relative;font-family:arial; font-size:14px;}
+
+    #pass{margin: 0 1em 0.9em 1em; border:0.25px solid black;padding :0.25em 0 0.25em 0.4em;}
+
+    div{background-color:#FC4967; width:43%; float:right;
+        margin : -6.3em 0 -10em 0;
+       padding: 2em 1em 1em 1em;}
+
+    #pw{background-color:#FC4967;
+       margin: -3.6em 10em 0.5em 11em; padding : 0 0 1.60em 0;
+       position:absolute;
+      width:33%;}
+
+    #recover{padding: 0.05em 8.10em 0.05em 1em; position: absolute;
+              text-align:center; float:center;
+              margin: -0.7em 3.7em -3em -0.1em; width:20%;display:inherit;}
+
+    #recover p{margin: 0.1em 3em 0em 0em; font-family:arial; font-size:13px;}
+    #recover p:hover{color:white;}
+
+    body{background-color:#FFC5B5;
+          height:25%; width:100%;}
+
+
+    #main{background-color:transparent;
+          padding: 0 5em 40em 2em;
+          margin: -4em -1.5em 0 0em;
+          position : relative;
+        width:50%;}
+
+    .acc{font-size:35px;
+       font-weight:bold;
+       font-family: arial;
+       position: absolute;
+       margin: 0 2.3em;}
+
+    .bt{line-height:3.5;
+      font-size:25px;
+      font-weight:bold;
+      margin: 0 5.5em;
+      position:absolute;}
+
+    #firname{margin: 4em 1em 0 -2em;
+            padding: 0.4em 1em 0.3em 0.5em;
+            border:0.25px solid gray;
+            position : relative;
+            font: 20px bold arial;}
+
+    .surname{margin: -7.4em -10em 0em 15em;
+            background-color: transparent;
+             padding: 0em 0em 0.75em -8em;
+            position:absolute;}
+
+     #surname{margin: 2.45em 1em 0 0.01em;
+              padding: 0.4em 1em 0.3em 0.5em;
+              border:0.25px solid gray;
+              position: absolute;
+            font: 20px bold arial;}
+
+    #eid{margin: 7em 1em 0 -15em;
+            padding: 0.4em 1em 0.3em 0.5em;
+            border:0.25px solid gray;
+            position:absolute;
+            font: 20px bold arial;
+          width:63.5%}
+
+    #word{margin: 10em 2em 0 -15em;
+            padding: 0.4em 1em 0.3em 0.5em;
+            border:0.25px solid gray;
+            position:absolute;
+            font: 20px bold arial;
+            width:45%;}
+
+    .cal{background-color: transparent; margin: 8em 12em 0 -3.5em;padding: 1em 1em 1em 1em; position:absolute;}
+    #cal{font-size: 20px; font-weight: bold; font-family: arial; color:#454543;
+          margin: -1.5em 2em 0em -1em;padding: 1.5em 1em 2em 1em; position:absolute;}
+    #bir{margin: 3em 0em 0em -0.10em;position:absolute;padding : 0.25em 0 0.20em 0.5em; width:auto;}
+
+    .sex{background-color: transparent; margin: 16.2em 12em 0 -3.5em;padding: 1em 1em 1em 1em; position:absolute; display:block;}
+    #sex{font-size: 20px; font-weight: bold; font-family: arial; color:#454543;
+          margin: -2em 2em 0em -0.05em;padding: -2em 1em 2em 1em; position:absolute;}
+    .male{margin: 0 0em 0 0.2em;font-size: 18px;}
+    #male{margin: 0 0.1em 0 -0.1em;}
+    .female{margin: 0 0em 0 0.6em;font-size: 18px;}
+    #female{margin: 0 0.35em 0 -0.2em;}
+    #end{background-color: transparent;position: absolute;
+        display: block;
+          padding : 1em 2em 1em 2em;
+          margin: 20.2em 2em 1em -5em;
+        font-family: calibri;font-size: 14px;}
+
+    .su{margin:23.5em 2em 2em -3.6em;
+        position:absolute;
+        background-color: transparent;}
+
+      .su input{color:white; font-weight: bold; font-size:18px;font-family: verdana;}
+
+        #su{background-color:#B3000F;
+          padding: 0.5em 1em 0.5em 1em;
+          border:0.25px solid black; width:50%;
+          position: absolute;
+          cursor:pointer;}
+
+          .es{position: relative;
+              font-size:16px;
+              margin:3.4em 1em 1em -0.1em;
+              font-family: arial;}
+
+              img{height:25em; width:35em;
+                margin: 5em 2em 0 -42.5em;
+              position: absolute;}
+
+              .f{margin:34em -10em -140em -10em;
+                background-color: white;
+                border-top:0.25px solid #D90065 ;
+                position:relative;
+                height: 0.01em;
+              padding: 0em 10em 6em 80em;}
+
+          a:link{color:#0007D9;}
+          a:hover{color:purple;}
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Handpage</h1>
+    <div>
+    <form>
+      <label for="emph" class="emph">E-mail or phone</label>
+        <input type="email" type="tel" id="emph" placeholder="abc@example.com">
+        <div id="pw">
+        <label for="pass" class="pass">Password</label>
+          <input type="password" id="pass">
+          <label>
+            <input class="submit" type="submit" value="Log In" style="background-color:#FC5142;border:0.25px solid #8F0500;cursor:pointer;">
+            </label>
+            <div id="recover"><p style="cursor:pointer;">forgot<font color="#FC4967">_</font>credentials?</p></div>
+            </div>
+            </div>
+      </form>
+    </header>
+      <div id="main">
+      <img src="flogo.jpg" alt="logo">
+        <p><span class="acc">Create Account</span><br>
+          <span class="bt">Its very simple.</span></p>
+        <form>
+            <label>
+              <input type="text" id="firname" placeholder="First name">
+            </label>
+            <div class="surname">
+            <label>
+              <input type="text" id="surname" placeholder="surname">
+            </label>
+            </div>
+            <label>
+              <input type="email" id="eid" placeholder="Mobile number or E-mail address">
+              </label>
+              <label>
+                <input type="password" id="word" placeholder="New password">
+                </label>
+                <div class="cal">
+                <label for="bir" id="cal">Birthday</label>
+                  <input type="date" id="bir">
+                </div>
+                <div class="sex">
+                <label for="gen" id="sex">Gender</label>
+                <input type="radio" id="male"><span class="male">Male</span>
+                  <label class="female"><input type="radio" id="female">Female</label>
+                </div>
+                <div id="end">
+                  <p>By clicking Sign Up, you agree to our Terms, Data Policy
+                    and Cookie Policy. You may receive SMS notifications from us
+                    and can opt out at any time.</p>
+                  </div>
+                  <div class="su">
+                    <input type="submit" value="Sign Up" id="su">
+                    <p class="es"><a href="">Create page</a> for celebrity, band or business</p>
+                    </form>
+                  </div>
+                  <div class="f">
+                    <footer>
+
+                    </footer>
+                  </div>
+
+  </body>
+</html>
